@@ -20,7 +20,7 @@ function lookup {
                 }
 
                 Write-Host "$($file.FullName)"
-                Write-Host "$($match.Line)" -ForegroundColor Green
+				Write-Host "Row: $($match.LineNumber), Match: $($match.Line.TrimStart())" -ForegroundColor Green 
             }
         }
 
